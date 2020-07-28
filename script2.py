@@ -41,7 +41,7 @@ connect = input(start + 'Begin Connectivity test for Accra [Y/N]: ' + end)
 ACCRA DCN Connectivity test
 '''
 if connect == 'y' or connect == 'Y':
-    print(start+'\nOpening Accra DCN Nodes...........'+end)
+    print(start+'\nOpening Accra DCN Nodes..............'+end)
     time.sleep(5)
 
     for row in accra_dcn:
