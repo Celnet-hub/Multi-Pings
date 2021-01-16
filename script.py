@@ -14,7 +14,7 @@ civ = open('CIV_DCN.csv', 'r',)
 
 # Function to ping IP addresses.
 def run_ping(ip_address):
-    ping_reply = os.system('ping -n 1 ' + ip_address)
+    ping_reply = os.system('ping -n 3 ' + ip_address)
     return ping_reply
 # Function to save ping results. 
 def saveResult(nodeName, NodeStatus):
@@ -55,7 +55,7 @@ for row in lagos_dcn:
         if run_ping(row[1]) == 1:
             stat = '{}'.format(row[0]) + ' is not reachable'
             statusList.append(stat)
-        time.sleep(1.9)
+        time.sleep(2)
 saveResult('Lagos_DCN', statusList)
 statusList.clear()
 lagos.close()
@@ -76,7 +76,7 @@ for row in accra_dcn:
         if run_ping(row[1]) == 1:
             stat = '{}'.format(row[0]) + ' is not reachable'
             statusList.append(stat)
-        time.sleep(1.9)
+        time.sleep(2)
 saveResult('Accra_DCN', statusList)
 statusList.clear()
 accra.close()
@@ -97,7 +97,7 @@ for row in civ_dcn:
         if run_ping(row[1]) == 1:
             stat = '{}'.format(row[0]) + ' is not reachable'
             statusList.append(stat)        
-        time.sleep(1.9)
+        time.sleep(2)
 saveResult('CIV_DCN', statusList)
 statusList.clear()   
 civ.close()
@@ -116,7 +116,8 @@ for row in seixal_dcn:
         print('\n' + asterisks1 + ' Running pings on {} '.format(row[0]) + asterisks1)
         if run_ping(row[1]) == 1:
             stat = '{}'.format(row[0]) + ' is not reachable'
-            statusList.append(stat)  
+            statusList.append(stat)
+        time.sleep(2)
 saveResult('Seixal_DCN',statusList)
 statusList.clear()
 seixal.close()
