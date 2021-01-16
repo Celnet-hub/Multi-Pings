@@ -1,5 +1,5 @@
 # Multi-Pings
-This script will automate ping tests to multiple network nodes instead of having to ping 10 or 20 IP addresses individually. This script is my first project and my introduction to the realm of **software** :nerd_face:. Show me some encouragement my staring :smile:.
+This script will automate ping tests to multiple network nodes instead of having to ping 10 or 20 IP addresses individually. This script is my first project and my introduction to the realm of **software** :nerd_face:. Show me some encouragement by staring :smile:.
 
 # Modules Used
 
