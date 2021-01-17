@@ -18,6 +18,13 @@ accra = open('Accra_DCN.csv', 'r',)
 seixal = open('Seixal_DCN.csv', 'r',)
 civ = open('CIV_DCN.csv', 'r',)
 ```
+* **Note:** the content of my CSV file looks like this:
+    name | ip_address
+    ------------ | -------------
+   Node 1 | 8.8.8.8
+    Node 2 | *.*.*.*
+    Node 3 | *.*.*.*
+
 #### Then these files are read using ```csv.reader()``` as seen below: 
 
 ```python
